@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "ea2cbab6-c4d1-4ec8-917b-6d20e57ab7ab",
+		"name": "uas-2023",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24463190"
+	},
+	"item": [
+		{
+			"name": "insert posting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aksi\" : \"tambah\",\r\n    \"tabel\" : \"posting\",\r\n    \"judul_posting\" : \"ini judul 123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert komentar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aksi\"      : \"tambah\",\r\n    \"tabel\"     : \"komentar\",\r\n    \"id_posting\"   : 1,\r\n    \"komentar\"  : \"ini adalah komentar no 1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view posting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aksi\" : \"view\",\r\n    \"tabel\" : \"posting\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
